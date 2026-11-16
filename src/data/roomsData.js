@@ -1,0 +1,142 @@
+export const roomsData = [
+  {
+    id: 1,
+    name: "Deluxe Ocean King Suite",
+    category: "Deluxe",
+    tagline: "Unmatched sunrise ocean views and bespoke luxury",
+    availability: "Available",
+    rating: 4.9,
+    reviewsCount: 128,
+    capacity: 2,
+    bedType: "1 Super King Bed",
+    size: "62 m² / 667 ft²",
+    view: "Panoramic Oceanfront",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+    description: "Spacious comfort featuring floor-to-ceiling windows overlooking the azure marina, a private ocean-breeze balcony, and an Italian marble bathroom with soaking tub.",
+    amenities: [
+      "Ocean Balcony",
+      "Marble Soaking Tub",
+      "Free High-speed Wi-Fi",
+      "Coffee & Tea Maker",
+      "24/7 Room Service",
+      "Smart TV"
+    ]
+  },
+  {
+    id: 2,
+    name: "Presidential Penthouse",
+    category: "Penthouse",
+    tagline: "The pinnacle of VIP grandeur and private terrace indulgence",
+    availability: "Available",
+    rating: 5.0,
+    reviewsCount: 84,
+    capacity: 4,
+    bedType: "2 Emperor Beds",
+    size: "185 m² / 1991 ft²",
+    view: "360° Marina & Skyline",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1200&q=80",
+    description: "Occupying the top floor, this world-class residence features a private plunge pool, panoramic views, lounge area, and customized ambient lighting.",
+    amenities: [
+      "Private Plunge Pool",
+      "Dedicated Butler Service",
+      "Airport Transfer",
+      "Full Lounge Area",
+      "Sound System",
+      "Complimentary Refreshments"
+    ]
+  },
+  {
+    id: 3,
+    name: "Executive Skyline Suite",
+    category: "Executive",
+    tagline: "Tailored for discerning business and leisure guests",
+    availability: "Available",
+    rating: 4.8,
+    reviewsCount: 96,
+    capacity: 2,
+    bedType: "1 King Bed",
+    size: "78 m² / 840 ft²",
+    view: "City Skyline & Waterfront",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+    description: "Designed for relaxation and comfort, this suite includes lounge access, an ergonomic workspace, and sunset city views.",
+    amenities: [
+      "Club Lounge Access",
+      "Workstation & Desk",
+      "Raindance Walk-in Shower",
+      "Complimentary Breakfast",
+      "Fast Wi-Fi"
+    ]
+  },
+  {
+    id: 4,
+    name: "Azure Private Garden Villa",
+    category: "Villa",
+    tagline: "Secluded tropical sanctuary with private courtyard garden",
+    availability: "Available",
+    rating: 4.9,
+    reviewsCount: 72,
+    capacity: 4,
+    bedType: "2 Queen Beds",
+    size: "130 m² / 1400 ft²",
+    view: "Botanical Zen Garden",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+    description: "A private detached sanctuary framed by palm trees. Features an outdoor stone rain shower, wooden sundeck, and garden patio.",
+    amenities: [
+      "Private Tropical Garden",
+      "Outdoor Stone Shower",
+      "Garden Patio & Cabana",
+      "Complimentary Mini-Bar",
+      "Family Friendly"
+    ]
+  },
+  {
+    id: 5,
+    name: "Royal Horizon Honeymoon Suite",
+    category: "Suites",
+    tagline: "Romantic suite designed for couples and celebrations",
+    availability: "Available",
+    rating: 5.0,
+    reviewsCount: 110,
+    capacity: 2,
+    bedType: "1 Canopy King Bed",
+    size: "95 m² / 1022 ft²",
+    view: "Sunset Ocean Bay",
+    featured: true,
+    image: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+    description: "Crafted for couples with canopy bedding, flower turndown, private oversized jacuzzi overlooking the sunset, and terrace seating.",
+    amenities: [
+      "In-Suite Jacuzzi",
+      "Canopy Bedding",
+      "Sunset View Terrace",
+      "Late Check-out",
+      "Complimentary Drink"
+    ]
+  },
+  {
+    id: 6,
+    name: "Classic Comfort Queen Room",
+    category: "Deluxe",
+    tagline: "Refined aesthetic comfort with contemporary styling",
+    availability: "Available",
+    rating: 4.7,
+    reviewsCount: 154,
+    capacity: 2,
+    bedType: "1 Queen Bed",
+    size: "45 m² / 484 ft²",
+    view: "Courtyard Garden",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
+    description: "An elegant blend of comfort featuring plush cotton linens, soundproof double-glazed windows, work desk, and walk-in rainfall shower.",
+    amenities: [
+      "Soundproof Room",
+      "Plush Linens",
+      "Walk-in Rainfall Shower",
+      "Coffee & Herbal Tea",
+      "Smart TV"
+    ]
+  }
+];

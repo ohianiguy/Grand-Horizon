@@ -1,0 +1,146 @@
+:root {
+  /* Color Palette */
+  --primary-navy: #0d1b2a;
+  --secondary-navy: #1b263b;
+  --accent-gold: #d4af37;
+  --accent-gold-hover: #b8972e;
+  --accent-gold-light: #fef9e7;
+  --accent-gold-glow: rgba(212, 175, 55, 0.25);
+  
+  --dark-charcoal: #1e293b;
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #f8fafc;
+  
+  --bg-light: #fdfdfd;
+  --bg-alt: #f8fafc;
+  --bg-card: #ffffff;
+  
+  --border-light: #e2e8f0;
+  --border-gold: #e6ca65;
+  
+  --success: #10b981;
+  --success-bg: #ecfdf5;
+  --error: #ef4444;
+  --error-bg: #fef2f2;
+  --info: #3b82f6;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(13, 27, 42, 0.08);
+  --shadow-lg: 0 12px 28px rgba(13, 27, 42, 0.12);
+  --shadow-gold: 0 8px 24px rgba(212, 175, 55, 0.25);
+  
+  /* Fonts */
+  --font-serif: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+}
+
+/* CSS Reset & Global Layout */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: var(--transition);
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, .brand-title, .banner-title {
+  font-family: var(--font-serif);
+  color: var(--primary-navy);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--accent-gold);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header-centered {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f6e05e 50%, #b8972e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
