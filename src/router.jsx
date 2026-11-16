@@ -16,8 +16,15 @@ export const BrowserRouter = ({ children }) => {
     if (typeof window === 'undefined') return '/';
     // Support hash router fallback or clean HTML5 history
     const hash = window.location.hash.replace(/^#/, '');
-    if (hash.startsWith('/')) return hash;
-    return window.location.pathname || '/';
+    if (hash.startsWith('/')) {
+      return hash.replace(/\/+$/, '') || '/';
+    }
+    let p = window.location.pathname || '/';
+    if (p === '/index.html' || p === '') return '/';
+    if (p.length > 1 && p.endsWith('/')) {
+      p = p.slice(0, -1);
+    }
+    return p;
   };
 
   const [pathname, setPathname] = useState(getPath);
@@ -61,15 +68,20 @@ export const Routes = ({ children }) => {
   let matchElement = null;
   let catchAllElement = null;
 
+  const current = pathname === '/' ? '/' : pathname.replace(/\/+$/, '');
+
   for (const child of routes) {
     if (!React.isValidElement(child)) continue;
     const { path, element } = child.props;
 
     if (path === '*') {
       catchAllElement = element;
-    } else if (path === pathname || (path === '/' && pathname === '')) {
-      matchElement = element;
-      break;
+    } else {
+      const routePath = path === '/' ? '/' : path.replace(/\/+$/, '');
+      if (routePath === current || (path === '/' && (current === '' || current === '/index.html'))) {
+        matchElement = element;
+        break;
+      }
     }
   }
 
